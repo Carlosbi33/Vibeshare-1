@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortify: Música y Videos Cortos</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase App (SDK principal) -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <!-- Firebase Authentication -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎵 Shortify 🎥</h1>
+    <nav>
+      <button id="login">Iniciar sesión</button>
+      <button id="logout" style="display: none;">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile">
+      <h2>Bienvenido</h2>
+      <p id="welcome-text">Inicia sesión para acceder a tus videos y música favoritos.</p>
+    </section>
+
+    <section id="music">
+      <h2>Música Destacada</h2>
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+    </section>
+
+    <section id="videos">
+      <h2>Videos Cortos</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/L_jWHffIx5E" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Shortify. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
