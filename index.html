@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Firebase App (SDK principal) -->
   <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-  <!-- Firebase Authentication -->
   <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
 </head>
 <body>
@@ -22,20 +21,30 @@
   <main>
     <section id="profile">
       <h2>Bienvenido</h2>
-      <p id="welcome-text">Inicia sesión para acceder a tus videos y música favoritos.</p>
+      <p id="welcome-text">Inicia sesión para acceder a tus playlists y videos favoritos.</p>
     </section>
 
     <section id="music">
-      <h2>Música Destacada</h2>
-      <audio controls>
-        <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
-        Tu navegador no soporta el reproductor de audio.
-      </audio>
+      <h2>🎵 Música por Género</h2>
+      <div class="genre" id="reggaeton">
+        <h3>Reguetón</h3>
+        <ul>
+          <li><audio controls><source src="https://example.com/reggaeton1.mp3" type="audio/mpeg">Canción 1</audio></li>
+          <li><audio controls><source src="https://example.com/reggaeton2.mp3" type="audio/mpeg">Canción 2</audio></li>
+        </ul>
+      </div>
+      <div class="genre" id="phonk">
+        <h3>Phonk</h3>
+        <ul>
+          <li><audio controls><source src="https://example.com/phonk1.mp3" type="audio/mpeg">Canción 1</audio></li>
+          <li><audio controls><source src="https://example.com/phonk2.mp3" type="audio/mpeg">Canción 2</audio></li>
+        </ul>
+      </div>
     </section>
 
     <section id="videos">
-      <h2>Videos Cortos</h2>
-      <div class="video-container">
+      <h2>🎥 Videos Cortos</h2>
+      <div class="video-feed">
         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/L_jWHffIx5E" frameborder="0" allowfullscreen></iframe>
       </div>

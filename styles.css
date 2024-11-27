@@ -1,63 +1,39 @@
-/* styles.css */
+
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+  background-color: #121212;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
-
 header {
-  background: #1a1a40;
-  padding: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  color: #00aaff;
-}
-
-nav button {
-  background: #00aaff;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-main {
-  padding: 1rem;
-}
-
-#profile, #music, #videos {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-#google-login, #facebook-login {
-  margin: 0.5rem;
-  background: #0073e6;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.video-container {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
-
-iframe {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
+header h1 {
+  color: #1db954;
 }
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #0f0f0f;
+nav button {
+  background-color: #1db954;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+nav button:hover {
+  background-color: #1ed760;
+}
+section {
+  padding: 20px;
+}
+.genre h3, .video-feed iframe {
+  margin: 10px 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
 }
